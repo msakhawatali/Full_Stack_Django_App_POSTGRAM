@@ -2,6 +2,15 @@
 
 {% block body %}
 
-{% block page %}{% endblock %}
+<div class="manage_box">
+    <h3 class="manage_header">{% block auth_header %}{% endblock %}</h3>
+    <div>
+
+{% block page %}
+
+{% endblock %}
+
+    </div>
+</div>
 
 {% endblock %}
