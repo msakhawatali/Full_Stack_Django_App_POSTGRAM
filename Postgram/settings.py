@@ -61,7 +61,7 @@ TEMPLATES = [
         'DIRS': [
             os.path.join(BASE_DIR, "authh/authh_templates"),
             os.path.join(BASE_DIR, "mainn/mainn_templates"),
-            os.path.join(BASE_DIR, "user_profile/user_profile_templates"),
+            os.path.join(BASE_DIR, "userprofile/user_profile_templates"),
             os.path.join(BASE_DIR, "templates"),
         ],
         'APP_DIRS': True,

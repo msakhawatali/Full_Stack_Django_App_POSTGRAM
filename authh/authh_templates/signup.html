@@ -7,26 +7,27 @@
 {% block page %}
 
     
-    <form action="">
+    <form action="/auth/signup-url" method="post">
+        {% csrf_token %}
             <div class="mb-3">
                 <label class="form-label">Username</label>
-                <input type="text" class="form-control" placeholder="Enter your username...">
+                <input type="text" name="username" class="form-control" placeholder="Enter your username..." required>
             </div>
             <div class="mb-3">
                     <label class="form-label">Email</label>
-                    <input type="email" class="form-control" placeholder="Enter your Email Address...">
+                    <input type="email" name="email" class="form-control" placeholder="Enter your Email Address..." required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">First Name</label>
-                    <input type="text" class="form-control" placeholder="Enter your First Name...">
+                    <input type="text" name="f_name" class="form-control" placeholder="Enter your First Name..." required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Last Name</label>
-                    <input type="text" class="form-control" placeholder="Enter your Last Name...">
+                    <input type="text" name="l_name" class="form-control" placeholder="Enter your Last Name..." required>
                 </div>
                 <div class="mb-3">
                     <label class="form-label">Password</label>
-                    <input type="text" class="form-control" placeholder="Enter your Password...">
+                    <input type="password" name="password" class="form-control" placeholder="Enter your Password..." required
                 </div>
                 <div style="text-align: center;">
                     <button class="btn btn-warning" type="submit">Signup</button>
